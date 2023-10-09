@@ -1,5 +1,10 @@
 import { readFile } from "node:fs/promises";
 
-readFile("MWAHAHA", (data) => {
-  console.log(data);
-});
+readFile("MWAHAHA").then(
+  (data) => {
+    console.log(data);
+  },
+  (error) => {
+    //...
+  },
+);
